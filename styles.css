@@ -1,0 +1,252 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#mealDetails img {
+  border-radius: 50%;
+}
+
+.addToFavorites {
+  margin-right: 0.5rem;
+}
+
+.addToFavorites .fa-heart {
+  color: red;
+}
+
+.addToFavorites .fa-heart:hover {
+  color: #000;
+}
+
+.view-details {
+  margin-left: auto;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.remove-from-favorites-btn {
+  margin-right: 0.5rem;
+  color: red;
+}
+
+.remove-from-favorites-btn:hover {
+  color: #000;
+}
+
+#searchForm {
+  max-width: 300px;
+  position: relative;
+}
+
+.input-group {
+  position: relative;
+}
+
+#searchForm .input-group-append {
+  display: flex;
+}
+
+#searchForm .input-group-append button {
+  margin-left: 5px;
+}
+
+#clearButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#clearButton:hover i {
+  color: red;
+}
+
+.search-container {
+  position: relative;
+}
+
+input[type="search"] {
+  padding: 8px 24px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+
+.btn-icon {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.btn-icon:focus {
+  outline: none;
+}
+
+.btn-icon i {
+  font-size: 30px;
+}
+
+.btn-icon:hover .search-icon {
+  color: #6c757d;
+}
+
+.btn-icon:hover {
+  background-color: transparent;
+}
+
+.meal-details {
+  background-color: #f3bd93a8;
+  padding: 20px;
+  border-radius: 10px;
+  height: 600px;
+  overflow-y: auto;
+  font-family: cursive;
+}
+
+.meal-details::-webkit-scrollbar {
+  width: 10px;
+}
+
+.meal-details::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.meal-details::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.ingredient-list li {
+  position: relative;
+}
+
+.ingredient-list li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 1px;
+  background-color: #ff6f69;
+}
+
+.meal-details-container {
+  background-color: #f3bd93a8;
+  border-radius: 10px;
+  padding: 20px;
+  height: 600px;
+  overflow-y: auto;
+  font-family: cursive;
+}
+
+.meal-details-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.meal-details-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.meal-details-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.bg-header {
+  background-color: #211e1cb3;
+}
+
+.navbar-brand {
+  color: #f0970a !important;
+  font-weight: 800 !important;
+}
+
+.nav-link {
+  color: rgba(240, 151, 10, 0.8) !important;
+  font-weight: 800 !important;
+}
+
+.nav-link:hover {
+  color: rgba(240, 151, 10, 1) !important;
+  font-weight: 900 !important;
+}
+
+.form-control:focus {
+  border: 2px solid rgba(240, 151, 10, 1) !important;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #f0970a;
+  border-color: black;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  background-color: #f0970a !important;
+  border-color: black;
+  box-shadow: none !important;
+}
+
+button#searchButton {
+  background: transparent;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: #f0970a;
+}
+
+.tag-line {
+  background-color: #211e1cb3;
+  width: 55%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.tag-line h1 {
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  color: #fff
+}
+
+.card-body {
+  background-color: #211e1cb3;
+}
+
+.card-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f0970a;
+}
+
+.card-footer {
+  background-color: #f3bd93a8;
+}
+
+.red-tooltip {
+  background-color: red;
+  color: white;
+}
+
+.red-tooltip:hover {
+  background-color: darkred;
+  color: white;
+}
