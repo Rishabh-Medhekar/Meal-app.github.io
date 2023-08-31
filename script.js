@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!meals) {
           searchResults.innerHTML = `
               <div style="background-color: #fdf5e6; width: 300px; border-radius: 10px; margin: 0 auto;">
-                    <h1 class="text-center mb-4" style="font-family: 'Lobster', cursive; color:red;">No results found.</h1>
+                    <h1 class="text-center mb-4" style="font-family: 'Arial, sans-serif'; color: #000;">No results found.</h1>
               </div'`;
           return;
         }
